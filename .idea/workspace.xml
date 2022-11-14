@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d7f1bcd-2db6-4493-af91-2d2624505574" name="Changes" comment="feat: created class for database and tables creation&#10;feat: created console commands for creation of database and tables">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/CustomerQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbSchemaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbTestData.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/CustomerQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/CustomerQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbSchemaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbSchemaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "/home/rookie/IdeaProjects/CustomerQueryTestAssignment/src/main/java",
     "last_opened_file_path": "/home/rookie/IdeaProjects/CustomerQueryTestAssignment/target/classes/com/rookie/customerQuery",
@@ -74,7 +72,7 @@
       <recent name="com.example.customerQuery" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.--create-all">
+  <component name="RunManager" selected="Application.--generate-data">
     <configuration name="--create-all" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.rookie.customerQuery.CustomerQuery" />
       <module name="CustomerQueryTestAssignment" />
@@ -89,9 +87,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerQuery" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="--generate-data" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.rookie.customerQuery.CustomerQuery" />
       <module name="CustomerQueryTestAssignment" />
+      <option name="PROGRAM_PARAMETERS" value="--generate-data" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rookie.customerQuery.*" />
@@ -104,7 +103,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.--create-all" />
-      <item itemvalue="Application.CustomerQuery" />
+      <item itemvalue="Application.--generate-data" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -116,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667977840013</updated>
       <workItem from="1667977842744" duration="15216000" />
-      <workItem from="1668008458185" duration="42584000" />
+      <workItem from="1668008458185" duration="49826000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1667978282783</created>
@@ -125,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667978282784</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: created class for database and tables creation&#10;feat: created console commands for creation of database and tables">
+      <created>1668431261782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668431261782</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +152,17 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="feat: created class for database and tables creation&#10;feat: created console commands for creation of database and tables" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: created class for database and tables creation&#10;feat: created console commands for creation of database and tables" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbTestData.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

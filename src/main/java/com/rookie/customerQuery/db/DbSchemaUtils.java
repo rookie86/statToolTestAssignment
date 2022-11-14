@@ -33,10 +33,28 @@ public class DbSchemaUtils {
         }
     }
 
+    public void dropTables() {
+        try (Statement statement = dbConnection.getConnection().createStatement()) {
+            String sqlQuery = "DROP TABLE IF EXISTS order_item";
+            statement.execute(sqlQuery);
+            sqlQuery = "DROP TABLE IF EXISTS\"order\"";
+            statement.execute(sqlQuery);
+            sqlQuery = "DROP TABLE IF EXISTS customer";
+            statement.execute(sqlQuery);
+            sqlQuery = "DROP TABLE IF EXISTS product";
+            statement.execute(sqlQuery);
+        } catch (SQLException e) {
+            System.out.println("Error while dropping tables");
+            e.printStackTrace();
+        }
+    }
+
     public void createTables() {
         try (Statement statement = dbConnection.getConnection().createStatement()) {
-            String sqlQuery;
 
+            dropTables();
+
+            String sqlQuery;
             sqlQuery = "DROP TABLE IF EXISTS order_item";
             statement.execute(sqlQuery);
             sqlQuery = "DROP TABLE IF EXISTS\"order\"";

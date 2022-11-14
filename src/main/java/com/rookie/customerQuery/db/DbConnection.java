@@ -17,11 +17,11 @@ public class DbConnection implements Closeable {
     private void setProperties(InputStream inputStream) throws IOException {
         Properties properties = new Properties();
         properties.load(inputStream);
-        setDbAddress(properties.getProperty("db_address"));
-        setDbPort(properties.getProperty("db_port"));
-        setDbName(properties.getProperty("db_name"));
-        setDbUsername(properties.getProperty("db_username"));
-        setDbPass(properties.getProperty("db_password"));
+        setDbAddress(properties.getProperty("db.address"));
+        setDbPort(properties.getProperty("db.port"));
+        setDbName(properties.getProperty("db.name"));
+        setDbUsername(properties.getProperty("db.username"));
+        setDbPass(properties.getProperty("db.password"));
     }
 
     public void loadProperties() {
@@ -60,7 +60,7 @@ public class DbConnection implements Closeable {
 
         try {
             connection = DriverManager
-                    .getConnection(connectionString, dbUsername, dbPass);
+                    .getConnection(connectionString, getDbUsername(), getDbPass());
 
         } catch (SQLException e) {
             System.out.println("Connection Failed");
