@@ -1,4 +1,4 @@
-package com.rookie.customerQuery.db;
+package com.rookie.stattool.db;
 
 import net.datafaker.Faker;
 

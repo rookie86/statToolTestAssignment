@@ -1,15 +1,15 @@
-package com.rookie.customerQuery;
+package com.rookie.stattool;
 
 import com.google.gson.*;
-import com.rookie.customerQuery.db.DbConnection;
-import com.rookie.customerQuery.db.DbQueries;
-import com.rookie.customerQuery.db.DbSchemaUtils;
-import com.rookie.customerQuery.db.DbTestData;
-import com.rookie.customerQuery.json.JsonFileUtils;
-import com.rookie.customerQuery.json.JsonQueries;
+import com.rookie.stattool.db.DbConnection;
+import com.rookie.stattool.db.DbQueries;
+import com.rookie.stattool.db.DbSchemaUtils;
+import com.rookie.stattool.db.DbTestData;
+import com.rookie.stattool.json.JsonFileUtils;
+import com.rookie.stattool.json.JsonQueries;
 
 
-public class CustomerQuery {
+public class Main {
 
     final static String helpMessage = "Db settings are inside db.properties. Test data generation settings are in dbTestData.properties\n" +
             "If file doesnt exist then default values from property file inside jar will be applied\n" +

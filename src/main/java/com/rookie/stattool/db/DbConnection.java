@@ -1,4 +1,4 @@
-package com.rookie.customerQuery.db;
+package com.rookie.stattool.db;
 
 import java.io.*;
 import java.nio.file.Files;

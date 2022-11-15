@@ -1,9 +1,9 @@
-package com.rookie.customerQuery.json;
+package com.rookie.stattool.json;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.rookie.customerQuery.db.DbQueries;
+import com.rookie.stattool.db.DbQueries;
 import java.text.ParseException;
 
 public class JsonQueries {

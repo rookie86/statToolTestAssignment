@@ -1,4 +1,4 @@
-package com.rookie.customerQuery.db;
+package com.rookie.stattool.db;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

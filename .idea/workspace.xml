@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d7f1bcd-2db6-4493-af91-2d2624505574" name="Changes" comment="feat: added queries and json creation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/json/JsonFileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/json/JsonQueries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_query_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_query_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_query_3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2d7f1bcd-2db6-4493-af91-2d2624505574" name="Changes" comment="feat: added json input and output&#10;feat: fat jar creation for mvn package">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/CustomerQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/CustomerQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/CustomerQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbSchemaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbSchemaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbTestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/json/JsonFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/json/JsonFileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/json/JsonQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/json/JsonQueries.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +75,12 @@
   </component>
   <component name="RunManager" selected="Application.--test-json">
     <configuration name="--create-all" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.rookie.customerQuery.CustomerQuery" />
+      <option name="MAIN_CLASS_NAME" value="com.rookie.stattool.Main" />
       <module name="CustomerQueryTestAssignment" />
       <option name="PROGRAM_PARAMETERS" value="--create-all" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rookie.customerQuery.*" />
+          <option name="PATTERN" value="com.rookie.stattool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +89,12 @@
       </method>
     </configuration>
     <configuration name="--generate-data" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.rookie.customerQuery.CustomerQuery" />
+      <option name="MAIN_CLASS_NAME" value="com.rookie.stattool.Main" />
       <module name="CustomerQueryTestAssignment" />
       <option name="PROGRAM_PARAMETERS" value="--generate-data" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rookie.customerQuery.*" />
+          <option name="PATTERN" value="com.rookie.stattool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +103,12 @@
       </method>
     </configuration>
     <configuration name="--test-json" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.rookie.customerQuery.CustomerQuery" />
+      <option name="MAIN_CLASS_NAME" value="com.rookie.stattool.Main" />
       <module name="CustomerQueryTestAssignment" />
       <option name="PROGRAM_PARAMETERS" value="--test-json" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rookie.customerQuery.*" />
+          <option name="PATTERN" value="com.rookie.stattool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +117,12 @@
       </method>
     </configuration>
     <configuration name="--test-queries" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.rookie.customerQuery.CustomerQuery" />
+      <option name="MAIN_CLASS_NAME" value="com.rookie.stattool.Main" />
       <module name="CustomerQueryTestAssignment" />
       <option name="PROGRAM_PARAMETERS" value="--test-queries" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rookie.customerQuery.*" />
+          <option name="PATTERN" value="com.rookie.stattool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,7 +147,7 @@
       <updated>1667977840013</updated>
       <workItem from="1667977842744" duration="15216000" />
       <workItem from="1668008458185" duration="71104000" />
-      <workItem from="1668501415532" duration="13137000" />
+      <workItem from="1668501415532" duration="13595000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1667978282783</created>
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668457697980</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: added json input and output&#10;feat: fat jar creation for mvn package">
+      <created>1668525375874</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668525375875</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,13 +207,14 @@
     <MESSAGE value="feat: added test data generation and corresponding menu item" />
     <MESSAGE value="feat: added test data generation and corresponding menu item&#10;fix: several minor fixes" />
     <MESSAGE value="feat: added queries and json creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added queries and json creation" />
+    <MESSAGE value="feat: added json input and output&#10;feat: fat jar creation for mvn package" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added json input and output&#10;feat: fat jar creation for mvn package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbTestData.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbTestData.java</url>
           <line>152</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>

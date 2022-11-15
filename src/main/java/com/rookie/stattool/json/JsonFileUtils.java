@@ -1,4 +1,4 @@
-package com.rookie.customerQuery.json;
+package com.rookie.stattool.json;
 
 import com.google.gson.*;
 
