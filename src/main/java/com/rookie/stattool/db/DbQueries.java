@@ -92,7 +92,11 @@ public class DbQueries {
             jsonOutput.add("customers", jsonCustomers);
             jsonOutput.addProperty("totalExpenses", totalAllCustomers.toString());
             BigDecimal avgExpenses = new BigDecimal(totalAllCustomers);
-            avgExpenses = avgExpenses.divide(BigDecimal.valueOf(customerCount), 2, RoundingMode.HALF_UP);
+            if (customerCount != 0) {
+                avgExpenses = avgExpenses.divide(BigDecimal.valueOf(customerCount), 2, RoundingMode.HALF_UP);
+            } else {
+                avgExpenses = BigDecimal.valueOf(0);
+            }
             jsonOutput.addProperty("avgExpenses", avgExpenses.toString());
             //System.out.println(jsonOutput);
             return jsonOutput;

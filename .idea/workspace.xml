@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d7f1bcd-2db6-4493-af91-2d2624505574" name="Changes" comment="feat: added json input and output&#10;feat: fat jar creation for mvn package">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/CustomerQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbSchemaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbSchemaUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/db/DbTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/json/JsonFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/json/JsonFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/customerQuery/json/JsonQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/json/JsonQueries.java" afterDir="false" />
+    <list default="true" id="2d7f1bcd-2db6-4493-af91-2d2624505574" name="Changes" comment="refactor: changed app name to stattool, changed main class name to Main">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_big.pgsql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rookie/stattool/db/DbQueries.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +69,25 @@
       <recent name="com.example.customerQuery" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.--test-json">
+  <component name="RunManager" selected="Application.--create-db">
     <configuration name="--create-all" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.rookie.stattool.Main" />
       <module name="CustomerQueryTestAssignment" />
       <option name="PROGRAM_PARAMETERS" value="--create-all" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rookie.stattool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="--create-db" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.rookie.stattool.Main" />
+      <module name="CustomerQueryTestAssignment" />
+      <option name="PROGRAM_PARAMETERS" value="--create-db" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rookie.stattool.*" />
@@ -132,6 +142,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.--create-all" />
+      <item itemvalue="Application.--create-db" />
       <item itemvalue="Application.--generate-data" />
       <item itemvalue="Application.--test-queries" />
       <item itemvalue="Application.--test-json" />
@@ -147,7 +158,7 @@
       <updated>1667977840013</updated>
       <workItem from="1667977842744" duration="15216000" />
       <workItem from="1668008458185" duration="71104000" />
-      <workItem from="1668501415532" duration="13595000" />
+      <workItem from="1668501415532" duration="18815000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1667978282783</created>
@@ -184,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668525375875</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor: changed app name to stattool, changed main class name to Main">
+      <created>1668525803035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668525803035</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +226,9 @@
     <MESSAGE value="feat: added test data generation and corresponding menu item&#10;fix: several minor fixes" />
     <MESSAGE value="feat: added queries and json creation" />
     <MESSAGE value="feat: added json input and output&#10;feat: fat jar creation for mvn package" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added json input and output&#10;feat: fat jar creation for mvn package" />
+    <MESSAGE value="refactor: changed app name to stattool" />
+    <MESSAGE value="refactor: changed app name to stattool, changed main class name to Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: changed app name to stattool, changed main class name to Main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
