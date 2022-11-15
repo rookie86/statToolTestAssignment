@@ -1,0 +1,10 @@
+{
+  "criterias": [
+    {"lastName": "Белоусов"},
+    {"productName": "Прочный Бетонный Бумажник", "minTimes": 2},
+    {"minExpenses": 200, "maxExpenses": 2000},
+    {"badCustomers": 3},
+    {"lastName": "Иванов"},
+    {"la-di-da": 31337 }
+  ]
+}

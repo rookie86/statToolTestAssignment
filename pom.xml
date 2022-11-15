@@ -39,6 +39,26 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>com.rookie.customerQuery.CustomerQuery</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
              <plugin>
                 <!-- Build an executable JAR -->
                 <groupId>org.apache.maven.plugins</groupId>
@@ -71,7 +91,8 @@
                                 <resource>
                                     <directory>${basedir}/target/classes</directory>
                                     <includes>
-                                        <include>sampleCsvGenerator.properties</include>
+                                        <include>db.properties</include>
+                                        <include>dbTestData.properties</include>
                                     </includes>
                                 </resource>
                             </resources>

@@ -19,19 +19,15 @@ public class DbQueries {
 
     public static final long DAY_IN_MS = 60 * 60 * 24 * 1000;
 
-    public JsonObject statsPeriod(String beginDate, String endDate) {
+    public JsonObject statsPeriod(String beginDate, String endDate) throws ParseException {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         Timestamp beginTimestamp;
         Timestamp endTimestamp;
 
-        try {
-            beginTimestamp = new Timestamp(formatter.parse(beginDate).getTime());
-            // Added one day to endTimestamp, because by design end date should be included
-            endTimestamp = new Timestamp(formatter.parse(endDate).getTime() + DAY_IN_MS);
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return null;
-        }
+        beginTimestamp = new Timestamp(formatter.parse(beginDate).getTime());
+        // Added one day to endTimestamp, because by design end date should be included
+        endTimestamp = new Timestamp(formatter.parse(endDate).getTime() + DAY_IN_MS);
+
 
         String sqlQuery = "SELECT c.id, c.last_name, c.first_name, p.name, SUM(p.price) " +
                 "FROM customer AS c " +
@@ -98,7 +94,7 @@ public class DbQueries {
             BigDecimal avgExpenses = new BigDecimal(totalAllCustomers);
             avgExpenses = avgExpenses.divide(BigDecimal.valueOf(customerCount), 2, RoundingMode.HALF_UP);
             jsonOutput.addProperty("avgExpenses", avgExpenses.toString());
-            System.out.println(jsonOutput);
+            //System.out.println(jsonOutput);
             return jsonOutput;
         } catch (SQLException e) {
             System.out.println("Error executing query");
@@ -135,7 +131,7 @@ public class DbQueries {
                 jsonResults.add(jsonCustomer);
             }
             jsonOutput.add("results", jsonResults);
-            System.out.println(jsonOutput);
+            //System.out.println(jsonOutput);
             return jsonOutput;
         } catch (SQLException e) {
             System.out.println("Error executing query");
@@ -172,7 +168,7 @@ public class DbQueries {
                 jsonResults.add(jsonCustomer);
             }
             jsonOutput.add("results", jsonResults);
-            System.out.println(jsonOutput);
+            //System.out.println(jsonOutput);
             return jsonOutput;
         } catch (SQLException e) {
             System.out.println("Error executing query");
@@ -212,7 +208,7 @@ public class DbQueries {
                 jsonResults.add(jsonCustomer);
             }
             jsonOutput.add("results", jsonResults);
-            System.out.println(jsonOutput);
+            //System.out.println(jsonOutput);
             return jsonOutput;
         } catch (SQLException e) {
             System.out.println("Error executing query");
@@ -242,7 +238,7 @@ public class DbQueries {
                 jsonResults.add(jsonCustomer);
             }
             jsonOutput.add("results", jsonResults);
-            System.out.println(jsonOutput);
+            //System.out.println(jsonOutput);
             return jsonOutput;
         } catch (SQLException e) {
             System.out.println("Error executing query");
